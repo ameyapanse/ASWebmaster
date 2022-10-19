@@ -15,8 +15,41 @@ html {
   color: #222;
   font-size: 1em;
   line-height: 1.4;
+  background-color: #ffffff;
 }
 
+#image1{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  padding: inherit;
+}
+
+#title_text{
+  font-family: 'Ogg';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 72px;
+  line-height: 128.4%;
+  /* or 92px */
+
+  text-align: center;
+
+  color: #FFFFFF;
+}
+
+.centered{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.container{
+  text-align: center;
+  position: relative;
+}
 /*
  * Remove text-shadow in selection highlight:
  * https://twitter.com/miketaylr/status/12228805301
