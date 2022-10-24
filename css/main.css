@@ -18,30 +18,15 @@ html {
   background-color: #ffffff;
 }
 
-#image1{
-  display: block;
+
+
+
+.top-list li{
+  display: inline-block;
+  padding: inherit;
   margin-left: auto;
   margin-right: auto;
   width: auto;
-  padding: inherit;
-}
-
-#title_text{
-  font-family: 'Ogg', serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 72px;
-  line-height: 128.4%;
-  /* or 92px */
-
-  text-align: center;
-
-  color: #FFFFFF;
-}
-
-#top-list li{
-  display: inline-block;
-  padding: 2px;
 }
 
 .centered{
@@ -52,11 +37,136 @@ html {
 
 }
 
-.title-container{
+.padded-container{
   text-align: center;
   position: relative;
   display: grid;
-  padding: 2%;
+  padding: 1% 2% 0.5% 2%;
+  width: auto;
+  max-width: 95vw;
+  border: 0;
+  margin: 0;
+}
+
+#image1{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  /*padding: inherit;*/
+  max-width: inherit;
+}
+
+#title_text{
+  font-family: 'Ogg', serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 72px;
+  line-height: 128.4%;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.topnav{
+  overflow: hidden;
+  padding: inherit;
+  display: inline-block;
+  border-top: 0px;
+  border-bottom: 0px;
+  padding-bottom: 0;
+  font-family: Graphik;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 22px;
+  letter-spacing: -0.01em;
+  text-align: left;
+}
+
+.float-left{
+  float: left;
+}
+
+.float-right{
+  float: right;
+}
+
+.middle-text{
+  padding: 10% 20% 5% 20%;
+  font-family: Ogg;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 46px;
+  letter-spacing: 0em;
+  text-align: center;
+  color:#272729;
+}
+
+#smaller-text{
+  padding: 0% 20% 5% 20%;
+  font-family: Graphik;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 29px;
+  letter-spacing: -0.01em;
+  text-align: center;
+
+}
+
+.row {
+  display: flex;
+  margin: 0% 15% 5% 15%;
+  flex-wrap: wrap;
+}
+
+.column {
+  flex: 33.33%;
+}
+
+.image-row{
+  max-width: 296px;
+}
+
+.grid{
+  margin: 0% 15% 5% 15%;
+  grid-template-columns:  repeat(auto-fit, minmax(min(100%/3, max(64px, 100%/2)), 1fr));
+    /*auto auto;*/
+  /*grid-auto-columns: minmax(0,1fr);*/
+  gap: 10% 5%;
+}
+
+.grid-item{
+  text-align: left;
+  max-width: 100%;
+}
+
+.grid-header{
+  font-family: Ogg;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 31px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #272729;
+}
+
+.grid-text{
+  font-family: Graphik;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 29px;
+  letter-spacing: -0.01em;
+  text-align: left;
+  color: #28282B;
+}
+
+.footer{
+  background: #2B2C2E;
+  text-align: center;
+  position: relative;
+  display: grid;
+  padding: 0.5% 1% 0.5% 1%;
+  width: 100%;
+  border: 0;
+  margin: 0 0 0 0;
 }
 /*
  * Remove text-shadow in selection highlight:
@@ -87,7 +197,7 @@ hr {
   height: 1px;
   border: 0;
   border-top: 1px solid #ccc;
-  margin: 1em 0;
+  margin: 0 0;
   padding: 0;
 }
 
@@ -154,7 +264,7 @@ textarea {
   border: 0;
   clip: rect(0, 0, 0, 0);
   height: 1px;
-  margin: -1px;
+  margin: 0px;
   overflow: hidden;
   padding: 0;
   position: absolute;

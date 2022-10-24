@@ -26,24 +26,71 @@
 <body>
 
   <!-- Add your site or application content here -->
-  <div class="root-container" id="root">
-    <header>
-      <div>
-        <ul id="top-list" style="display: block">
-          <li>Lorem Ipsum</li>
-          <li>Home</li>
-          <li>About</li>
-          <li>Contact</li>
-          <li>Work</li>
-        </ul>
+  <div class="root-container" id="root" style="margin: 0">
+    <header></header>
+    <div class="padded-container">
+      <ul class="topnav top-list" style="display: block">
+        <li class="float-left">LOREM IPSUM</li>
+        <li class="float-right">HOME</li>
+        <li class="float-right">ABOUT</li>
+        <li class="float-right">CONTACT</li>
+        <li class="float-right">WORK</li>
+      </ul>
+    </div>
+    <div class="padded-container">
+      <img src="img/title_image.jpg" id="image1">
+      <div class="centered" id="title_text">Lorem Ipsum</div>
+    </div>
+    <div class="padded-container">
+      <div class="middle-text"> Sed volutpat, risus id ultricies blandit,
+        arcu elit consectetur tellus, laoreet ornare purus nulla in ipsum ac augue vitae turpis. </div>
+      <div class="middle-text" id="smaller-text"> Mauris vel nisl ante. Vivamus sagittis ullamcorper quam,
+        sit amet tincidunt enim sollicitudin ut. Vestibulum at elementum leo. Aliquam erat volutpat. Nullam magna orci, accumsan at arcu lobortis, volutpat cursus nisl. Suspendisse metus purus, gravida vehicula eros in, malesuada posuere magna.</div>
+    </div>
+    <div class="padded-container">
+      <div class="row">
+        <div class="column" style="padding-top: 0%">
+          <img src="img/bottom_img1.png" class="image-row">
+        </div>
+        <div class="column" style="padding-top: 10%" class="image-row">
+          <img src="img/bottom_img2.png">
+        </div>
+        <div class="column" style="padding-top: 20%" class="image-row">
+          <img src="img/bottom_img3.png">
+        </div>
       </div>
-    </header>
-    <div class="title-container">
-    <img src="img/title_image.jpg" id="image1">
-    <div class="centered" id="title_text">Lorem Ipsum</div>
+    </div>
+    <div class="padded-container grid">
+      <div class="grid-item">
+        <div class="grid-header">Yosemite</div>
+        <div class="grid-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          Suspendisse varius eu metus et scelerisque. Nullam gravida eu elit at rutrum.
+          Aliquam sit amet sollicitudin est. Suspendisse potenti. Donec porttitor tempor pulvinar.
+          Sed congue elementum placerat. Maecenas nec rhoncus est. </div>
+      </div>
+      <div class="grid-item">
+        <div class="grid-header">El Capitan</div>
+        <div class="grid-text">Mauris vel nisl ante. Vivamus sagittis ullamcorper quam,
+          sit amet tincidunt enim sollicitudin ut. Vestibulum at elementum leo. Aliquam erat volutpat.
+          Nullam magna orci, accumsan at arcu lobortis, volutpat cursus nisl.
+          Suspendisse metus purus, gravida vehicula eros in, malesuada posuere magna.</div>
+      </div>
+      <div class="grid-item">
+        <div class="grid-header">High Sierra</div>
+        <div class="grid-text">Nulla ac dolor nibh. Vestibulum feugiat convallis posuere.
+          Pellentesque vestibulum eleifend turpis vel consequat. Cras tempor turpis in nunc finibus sollicitudin.
+          Morbi malesuada sodales urna, quis pulvinar nunc interdum ultrices. Nullam id risus velit.
+          Ut fringilla eleifend mollis. Phasellus in dui tellus.Nam euismod mattis quam porttitor ornare.</div>
+      </div>
+      <div class="grid-item">
+        <div class="grid-header">Mojave</div>
+        <div class="grid-text">Integer tempor enim lacus, sit amet dapibus diam elementum et.
+          Pellentesque congue libero id enim dignissim consequat. Fusce et sagittis magna, in feugiat felis.
+          Sed volutpat, risus id ultricies blandit, arcu elit consectetur tellus, laoreet ornare purus nulla in ipsum.
+          Praesent ac augue vitae turpis ullamcorper hendrerit eleifend in odio.</div>
+      </div>
     </div>
   </div>
-
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
@@ -54,6 +101,16 @@
 <!--    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')-->
 <!--  </script>-->
 <!--  <script src="https://www.google-analytics.com/analytics.js" async></script>-->
+  <footer class="footer" style="color: #FFFFFF;">
+      <ul class="topnav top-list" style="display: block">
+        <li class="topnav-left">Made with ♡ by A.S. Graphic Studio</li>
+        <li class="float-right">HOME</li>
+        <li class="float-right">ABOUT</li>
+        <li class="float-right">CONTACT</li>
+        <li class="float-right">WORK</li>
+      </ul>
+  </footer>
 </body>
+
 
 </html>
