@@ -116,7 +116,7 @@ html {
   display: flex;
   margin: 0% 15% 5% 15%;
   flex-shrink: 0.5;
-  /*flex-wrap: none;*/
+  flex-wrap: wrap;
 }
 
 .column img{
@@ -124,6 +124,7 @@ html {
   margin-left: auto;
   margin-right: auto;
   /*padding: inherit;*/
+  flex-shrink: 0.5;
   max-width: inherit;
 }
 
@@ -138,12 +139,13 @@ html {
 }
 
 .column-gap {
-  flex: 1 0 10px;
+  flex-grow:1;
 }
 
 
 .image-row{
   height: auto;
+  flex-shrink: 0;
   max-width: 100%;
 }
 
